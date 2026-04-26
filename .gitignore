@@ -1,0 +1,18 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+!.vscode/extensions.json
+.idea/
+
+# Raw assets (not deployed)
+assets/photos/*.HEIC
+assets/photos/*.DNG
+assets/photos/*.dng
+assets/photos/*.heic
+
+# Node (if ever needed)
+node_modules/

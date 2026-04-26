@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:share.google)",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:www.facebook.com)",
+      "WebFetch(domain:restaurantguru.com)",
+      "WebFetch(domain:web.hotspringschamber.com)",
+      "WebFetch(domain:usarestaurants.info)",
+      "WebFetch(domain:nutritionclubdirectory.com)"
+    ]
+  }
+}
