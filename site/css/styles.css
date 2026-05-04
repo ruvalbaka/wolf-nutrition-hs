@@ -1227,6 +1227,83 @@ address { font-style: normal; }
   color: rgba(255,255,255,0.55);
 }
 
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  /* --- Section padding --- */
+  .menu    { padding: 72px 0 64px; }
+  .vibe    { padding: 72px 0; }
+  .gallery { padding: 72px 0 80px; }
+  .reviews { padding: 72px 0; }
+  .info    { padding: 72px 0 80px; }
+  .cta     { padding: 80px 20px; }
+  .footer  { padding: 44px 0 28px; }
+
+  /* --- Hero --- */
+  .hero__content { padding: 100px 20px 56px; }
+  .hero__title { font-size: clamp(56px, 14vw, 80px); }
+  .hero__desc { font-size: 17px; margin-bottom: 32px; }
+  .hero__badge { margin-bottom: 28px; font-size: 13px; }
+  .hero__actions { gap: 12px; }
+  .hero__actions .btn { padding: 14px 28px; font-size: 14px; }
+  .hero__stats { gap: 16px; padding-top: 20px; }
+  .hero__stat-value { font-size: 26px; }
+  .hero__stat-label { font-size: 11px; }
+
+  /* --- Section headings --- */
+  .section-heading { font-size: clamp(44px, 11vw, 80px); }
+  .kicker { font-size: 11px; letter-spacing: 4px; }
+
+  /* --- Menu cards --- */
+  .menu__image-caption { padding: 14px 20px; }
+  .menu__image-label { font-size: 16px; letter-spacing: 2px; }
+
+  /* --- Benefits strip --- */
+  .benefit__text { font-size: 16px; letter-spacing: 2px; }
+
+  /* --- Vibe --- */
+  .vibe__lead { font-size: 16px; margin-top: 20px; }
+  .vibe__pillars { margin-top: 28px; gap: 12px; }
+  .vibe__pillar { padding: 16px 20px; }
+  .vibe__image { aspect-ratio: 4/3; max-height: 340px; }
+
+  /* --- Gallery --- */
+  .gallery__grid { grid-auto-rows: 180px; margin-top: 36px; gap: 6px; }
+
+  /* --- Reviews --- */
+  .reviews__header { gap: 24px; margin-bottom: 36px; }
+  .reviews__big-number { font-size: 64px; }
+  .review { padding: 24px; }
+  .review--featured { padding: 28px; }
+  .review__text { font-size: 16px; }
+  .review--featured .review__text { font-size: 17px; }
+  .reviews__cta-btn { margin-top: 32px; }
+
+  /* --- Info / Hours --- */
+  .info__grid { gap: 48px; }
+  .info__block .section-heading { margin-bottom: 28px; }
+  .hours-table td { padding: 14px 0; font-size: 15px; }
+  .location__address { font-size: 18px; }
+  .location__phone a { font-size: 18px; }
+
+  /* --- CTA section --- */
+  .cta__heading { font-size: clamp(40px, 10vw, 72px); }
+  .cta__text { font-size: 16px; margin-bottom: 32px; }
+  .cta__actions { gap: 12px; }
+  .cta__actions .btn--lg { padding: 16px 32px; font-size: 15px; }
+  .cta__logo { width: 64px; height: 64px; margin-bottom: 24px; }
+
+  /* --- Footer --- */
+  .footer__inner { gap: 20px; }
+  .footer__name { font-size: 24px; }
+
+  /* --- Lightbox --- */
+  .lightbox__prev { left: 8px; width: 44px; height: 44px; font-size: 36px; }
+  .lightbox__next { right: 8px; width: 44px; height: 44px; font-size: 36px; }
+  .lightbox__close { top: 14px; right: 14px; font-size: 28px; }
+  .lightbox__img { max-width: 96vw; max-height: 80vh; }
+}
+
 /* ===== REVEAL ===== */
 [data-reveal] {
   opacity: 0;
