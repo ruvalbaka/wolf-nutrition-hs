@@ -129,6 +129,7 @@
   function setupMobileNav() {
     const burger = document.getElementById('navBurger');
     const mobile = document.getElementById('navMobile');
+    const nav = document.getElementById('nav');
     if (!burger || !mobile) return;
 
     mobile.setAttribute('aria-hidden', 'true');
@@ -138,6 +139,7 @@
       mobile.classList.toggle('is-open', isOpen);
       burger.setAttribute('aria-expanded', String(isOpen));
       mobile.setAttribute('aria-hidden', String(!isOpen));
+      nav?.classList.toggle('has-mobile-open', isOpen);
       isOpen ? lockScroll() : unlockScroll();
     });
 
@@ -165,6 +167,7 @@
   function closeMobileNav() {
     const burger = document.getElementById('navBurger');
     const mobile = document.getElementById('navMobile');
+    const nav = document.getElementById('nav');
     if (burger) {
       burger.classList.remove('is-open');
       burger.setAttribute('aria-expanded', 'false');
@@ -173,6 +176,7 @@
       mobile.classList.remove('is-open');
       mobile.setAttribute('aria-hidden', 'true');
     }
+    nav?.classList.remove('has-mobile-open');
     unlockScroll();
   }
 
