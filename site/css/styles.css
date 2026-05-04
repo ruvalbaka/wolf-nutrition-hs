@@ -339,7 +339,7 @@ address { font-style: normal; }
   visibility: hidden;
   transform: translateY(-20px);
   transition: all 0.4s var(--ease);
-  z-index: 99;
+  z-index: 200;
 }
 .nav__mobile.is-open {
   opacity: 1;
