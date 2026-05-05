@@ -94,10 +94,9 @@ address { font-style: normal; }
   gap: 24px;
 }
 .preloader__logo {
-  font-family: var(--heading);
-  font-size: 72px;
-  color: var(--gold);
-  letter-spacing: 6px;
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  object-fit: contain;
   animation: preloaderPulse 1.2s ease-in-out infinite;
 }
 @keyframes preloaderPulse {
@@ -228,13 +227,10 @@ address { font-style: normal; }
 .nav__logo {
   width: 44px; height: 44px;
   border-radius: 50%;
-  border: 2px solid var(--maroon-glow);
-  transition: border-color 0.3s;
-  /* Placeholder for missing logo */
-  background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-deep) 100%);
-  object-fit: cover;
+  object-fit: contain;
+  display: block;
 }
-.nav__brand:hover .nav__logo { border-color: var(--maroon); }
+.nav__brand:hover .nav__logo { opacity: 0.9; }
 .nav__name {
   font-family: var(--heading);
   font-size: 28px;
@@ -1215,10 +1211,9 @@ address { font-style: normal; }
 .cta__logo {
   width: 80px; height: 80px;
   border-radius: 50%;
-  border: 3px solid rgba(245,197,24,0.3);
   margin: 0 auto 32px;
-  background: linear-gradient(135deg, var(--maroon-deep) 0%, var(--maroon) 100%);
-  object-fit: cover;
+  display: block;
+  object-fit: contain;
 }
 .cta__heading {
   font-family: var(--heading);
