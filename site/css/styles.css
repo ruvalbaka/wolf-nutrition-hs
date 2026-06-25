@@ -334,7 +334,7 @@ address { font-style: normal; }
   align-items: center;
   justify-content: center;
   gap: 0;
-  padding: 80px 40px 48px;
+  padding: 80px 40px 96px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-16px);
