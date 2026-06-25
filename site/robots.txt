@@ -23,4 +23,4 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-Sitemap: https://wolf-nutrition-hs.vercel.app/sitemap.xml
+Sitemap: https://wolfnutritionhotsprings.com/sitemap.xml

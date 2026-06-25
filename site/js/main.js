@@ -449,21 +449,6 @@
     });
   }
 
-  // ===== ORDER BUTTON PLACEHOLDER =====
-  function setupOrderButtons() {
-    const btns = document.querySelectorAll('#orderBtn, #orderBtnMobile');
-    btns.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        // Scroll to menu section as placeholder until online ordering link is provided
-        const menu = document.getElementById('menu');
-        if (menu) {
-          closeMobileNav();
-          menu.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-  }
 
   // ===== INIT =====
   document.addEventListener('DOMContentLoaded', () => {
@@ -473,7 +458,6 @@
     setupMobileNav();
     setupLightbox();
     setupYear();
-    setupOrderButtons();
   });
 
   window.addEventListener('load', setupGSAP);
